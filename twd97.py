@@ -7,7 +7,7 @@ import argparse
 Based on http://www.gps.moi.gov.tw/SSCenter/Introduce/IntroducePage.aspx?Page=GPS9
 TWD97 has E0 = 250000m, k0 = 0.9999, a = 6378137m and f = 1 / 298.257222101
 
-The formula are based on http://en.wikipedia.org/wiki/Universal_transverse_Mercator
+The formulas are based on http://en.wikipedia.org/wiki/Universal_transverse_Mercator
 """
 
 a = 6378.137
