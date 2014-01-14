@@ -2,4 +2,4 @@
 setup.py
 twd97/__init__.py
 twd97/converter.py
-twd97/bin/twd97conv.py
+twd97/scripts/twd97conv.py
