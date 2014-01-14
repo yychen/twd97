@@ -15,8 +15,9 @@ setup(name='twd97',
           'twd97', 'wgs84', 'universal transverse mercator', 'UCM',
       ],
       classifiers=[
+          'License :: OSI Approved :: MIT License',
           'Topic :: Scientific/Engineering :: GIS',
-          'Topic :: Software Development :: Libraries :: Python Modules'
+          'Topic :: Software Development :: Libraries :: Python Modules',
           'Programming Language :: Python :: 2.7',
           'Intended Audience :: Developers',
       ],
