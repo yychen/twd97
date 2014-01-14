@@ -21,6 +21,6 @@ setup(name='twd97',
           'Intended Audience :: Developers',
       ],
       scripts=[
-          'twd97/bin/twd97conv.py',
+          'twd97/scripts/twd97conv.py',
       ],
      )
