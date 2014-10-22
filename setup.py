@@ -2,7 +2,7 @@
 from distutils.core import setup
 
 setup(name='twd97',
-      version='0.1.0',
+      version='0.1.1',
       description='Python converter between TWD97 and WGS84',
       license='MIT',
       author='Tom Chiung-ting Chen',
