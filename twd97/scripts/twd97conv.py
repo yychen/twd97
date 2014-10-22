@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+import sys
 import argparse
 
 from twd97.converter import towgs84, fromwgs84, presentations
@@ -18,16 +20,19 @@ def main():
         lat, lng = towgs84(float(E), float(N), pkm=args.pkm, presentation=args.p)
 
         if args.p:
-            print u'%s,%s' % (lat, lng)
+            print(u'%s,%s' % (lat, lng))
         else:
-            print u'%f,%f' % (lat, lng)
+            print(u'%f,%f' % (lat, lng))
 
     elif args.t:
-        nospaces = args.t.decode('utf-8').replace(' ', '')
+        if sys.version < '3':
+            nospaces = args.t.decode('utf-8').replace(' ', '')
+        else:
+            nospaces = args.t.replace(' ', '')
         lat, lng = nospaces.split(',')
         E, N = fromwgs84(lat, lng, pkm=args.pkm)
 
-        print u'%f,%f' % (E, N)
+        print(u'%f,%f' % (E, N))
 
     else:
         parser.print_help()
